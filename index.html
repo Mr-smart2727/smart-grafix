@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive nar bar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="sss">
+            <ul class="sidebar">
+                <li onclick = hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Blog..</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="#">Coding2go</a></li>
+            <li class="hideOnMobile"><a href="#">Blog.</a></li>
+            <li class="hideOnMobile"><a href="#">Products</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Forum</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg><a href="#"></a></li>
+    </nav>    
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sss')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sss')
+            sidebar.style.display = 'none'   
+        }
+        
+        document.querySelector(".sss").addEventListener("click", () =>{
+            const sidebar = document.querySelector('.sss')
+            sidebar.style.display = 'none'  
+
+        })
+    </script>
+
+    <main>
+            <div class="banner-text">
+                <h4>We're your creative graphics design experts</h4>
+                <p>We create beautifully designed graphic images.</p>
+            </div>
+    </main>
+    
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="/images/GFX.jpg" alt="">
+                <h4>Graphics designs</h4>
+                <p>Lorem,ipusm dolor sit amet consecuteur adipisicing elit. Voluptatibus question.</p>
+                <a href="mailto:obinnauba2727@gmail.com" class="btn btn--contact">Contact Us</a>
+            </div>
+
+                <div class="image">
+                    <img src="/images/ART.png" alt="">
+                    <h4>Art designs</h4>
+                    <p>Lorem,ipusm dolor sit amet consecuteur adipisicing elit. Voluptatibus question.</p>
+                    <a href="#" class="ctn">Click More!</a>
+                </div>
+         </div>  
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS AND DESTINATIONS</h1>
+                <p>Loremipusm dolor sit amet consecuteur adipiscing elit. consectetuer.quality</p>
+                <a href="#" class="ctn">learn more</a>
+
+            </div class="col image-col">
+                <div class="image-gallery">
+                    <img src="/images/check.jpg" alt="">
+                    <img src="/images/check.jpg" alt="">
+                    <img src="/images/check.jpg" alt="">
+                    <img src="/images/check.jpg" alt="">
+                  
+                </div>
+            <div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>123 Fifth Avenue,NY 10160, New York, USA | Phone: +234-704-1864-515 | Email: obinnauba@gmail.com</p>
+        <p>copyright &copy;2023. All rights reserved</p>
+
+    </section>
+</body>
+</html>
